@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>API Client</title>
   </head>
   <body>
     <header></header>
     <main>
 <div class="container">
-  <label for="url">URL</label>
+  <div>
+  <label for="method">Method</label>
+    <select id="method">
+      <option value="post">POST</option>
+      <option value="get">GET</option>
+    </select>
+    <label for="url">URL</label>
   <input type="text" id="url" class="form-control"/>
   <button class="btn btn-success" id="send">Send Request</button>
+  </div>
   <div>
     <b>Staus Code:</b><span id="stat"></span>
     <p id="output"></p>
